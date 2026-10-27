@@ -1,0 +1,49 @@
+[
+  {
+    "id": "realesrgan-photo",
+    "name": "Пейзажи, архитектура и интерьеры",
+    "file": "RealESRGAN_x4plus.pth",
+    "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+    "source": "https://github.com/xinntao/Real-ESRGAN",
+    "license": "BSD-3-Clause",
+    "kind": "component",
+    "technical_name": "Real-ESRGAN ×4plus",
+    "description": "Фотооснова Real-ESRGAN ×4plus. Облака, листва и рябь воды прорабатываются автоматически по найденным областям. Чёткие детали и ровные поверхности сохраняются."
+  },
+  {
+    "id": "pbrify-detail",
+    "name": "Портретная фактура и облака · PBRify V4",
+    "file": "4x-PBRify_UpscalerV4.safetensors",
+    "url": "https://github.com/Kim2091/Kim2091-Models/releases/download/4x-PBRify_UpscalerV4/4x-PBRify_UpscalerV4.safetensors",
+    "source": "https://github.com/Kim2091/Kim2091-Models/releases/tag/4x-PBRify_UpscalerV4",
+    "license": "CC0-1.0 · Kim2091",
+    "kind": "component",
+    "description": "Основа портрета для ткани и волос. Лицо и борода восстанавливаются единым выровненным проходом CodeFormer; при большом увеличении PBRify добавляет ограниченную фактуру на той же сетке. В пейзажах — локальная фактура облаков.",
+    "technical_name": "PBRify V4 · DAT2"
+  },
+  {
+    "id": "codeformer",
+    "name": "Портреты · восстановление лица",
+    "file": "codeformer.pth",
+    "url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth",
+    "source": "https://github.com/sczhou/CodeFormer",
+    "license": "S-Lab 1.0 · некоммерческое использование",
+    "kind": "face",
+    "description": "Отдельное восстановление выровненных лиц 512×512. Ползунок сходства управляет компромиссом между деталями и верностью исходнику. Используется после апскейла с маской лица, исключающей волосы. Может синтезировать новые черты. Для коммерческого применения требуется разрешение авторов.",
+    "technical_name": "CodeFormer",
+    "dependencies": [
+      {
+        "file": "detection_Resnet50_Final.pth",
+        "name": "Компонент портретов",
+        "url": "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth",
+        "sha256": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d"
+      },
+      {
+        "file": "parsing_parsenet.pth",
+        "name": "Компонент портретов",
+        "url": "https://github.com/xinntao/facexlib/releases/download/v0.2.2/parsing_parsenet.pth",
+        "sha256": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2"
+      }
+    ]
+  }
+]
