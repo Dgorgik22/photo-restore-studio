@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="630" viewBox="0 0 630 630">
+  <title>Photo Restore Studio</title>
+  <rect width="630" height="630" fill="#e72934"/>
+  <g fill="#ffffff">
+    <path d="M49 277 278 49 310 81 81 309Z"/>
+    <path d="M324 81 356 49 584 277 552 309Z"/>
+    <path d="M50 354 82 322 310 550 278 582Z"/>
+    <path d="M324 550 552 322 584 354 356 582Z"/>
+    <path d="M190 315 316 190 442 315 316 441Z"/>
+  </g>
+</svg>
