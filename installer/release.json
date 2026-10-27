@@ -1,0 +1,33 @@
+{
+  "models": {
+    "plugins\\models\\4x-PBRify_UpscalerV4.safetensors": "a00fa50116895a9b766aeb012edad0a14d66f3afda65539efc0f6fc28c991ba2",
+    "plugins\\models\\codeformer.pth": "1009e537e0c2a07d4cabce6355f53cb66767cd4b4297ec7a4a64ca4b8a5684b7",
+    "plugins\\models\\RealESRGAN_x4plus.pth": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+    "plugins\\gfpgan\\weights\\detection_Resnet50_Final.pth": "6d1de9c2944f2ccddca5f5e010ea5ae64a39845a86311af6fdf30841b0a5a16d",
+    "plugins\\gfpgan\\weights\\parsing_parsenet.pth": "3d558d8d0e42c20224f13cf5a29c79eba2d59913419f945545d8cf7b72920de2"
+  },
+  "unpacked_bytes": 6195715406,
+  "archives": [
+    {
+      "name": "PhotoRestoreStudio-0.25-alpha-lite-part-01.zip",
+      "bytes": 1054968695,
+      "sha256": "ea89eef83f47e5ce2192a20bf258e47d92dad3708dd9b37b5dd311469feb1565"
+    },
+    {
+      "name": "PhotoRestoreStudio-0.25-alpha-lite-part-02.zip",
+      "bytes": 1195917855,
+      "sha256": "8a5b089967116c2b6f7cc5618f870662797a44942165a6dfcba4f1f28e90ade0"
+    },
+    {
+      "name": "PhotoRestoreStudio-0.25-alpha-lite-part-03.zip",
+      "bytes": 927089728,
+      "sha256": "7234539ae80115f097a822209d1a26f8550801530c463dde42009ffd38eff54b"
+    },
+    {
+      "name": "PhotoRestoreStudio-0.25-alpha-lite-part-04.zip",
+      "bytes": 820826911,
+      "sha256": "704e8bef0a596922fb7ff0e0d554a05888e5541d93c6211f5eff4dd59f3f7043"
+    }
+  ],
+  "version": "0.25-alpha-lite"
+}

@@ -8,10 +8,16 @@ alpha: results and hardware compatibility still need testing.
 
 ## Download and install
 
-Open **Releases** and download all four `part-*.zip` archives, `manifest.json`,
-`Install-Alpha.ps1` and `Setup.cmd` into one folder. Run **Setup.cmd**, choose a new
-installation folder, and wait for verification and extraction. Administrator rights
-are unnecessary when the destination is writable. Python is not required.
+Download just **[Setup.exe](https://github.com/Dgorgik22/photo-restore-studio/releases/download/v0.25.0-alpha-lite/PhotoRestoreStudio-0.25-alpha-lite-Setup.exe)**,
+open it, choose a new installation folder and click **Install**. The small installer
+downloads the required parts automatically, verifies their SHA-256 checksums, installs
+the application and creates a shortcut. Interrupted downloads can resume.
+Administrator rights are unnecessary when the destination is writable. Python is not required.
+Windows 10/11 with .NET Framework 4.8 is supported.
+
+For offline installation, place all four `part-*.zip` archives next to Setup.exe.
+The installer reuses them without downloading again; no separate manifest or script is needed.
+Temporary installer downloads are removed after success by default. Adjacent ZIP files are preserved.
 
 Alternatively, extract **all four** ZIP archives into the same folder, then run
 `PhotoRestoreStudio/PhotoRestoreStudio.exe`. Each archive contains different files
@@ -70,10 +76,13 @@ separate development line.
 графика и иллюстрации. Поддерживает PNG/JPEG, увеличение ×1–×8, свой масштаб,
 15–600 DPI и сравнение с оригиналом. SVG доступен только в режиме графики.
 
-Скачайте из **Releases** четыре архива `part-*.zip`, `manifest.json`,
-`Install-Alpha.ps1` и `Setup.cmd` в одну папку. Запустите **Setup.cmd** и выберите
-новую папку установки. Либо распакуйте все четыре архива в одну папку и запустите
-`PhotoRestoreStudio.exe`. Python не требуется. Язык переключается сразу:
+Скачайте только **[Setup.exe](https://github.com/Dgorgik22/photo-restore-studio/releases/download/v0.25.0-alpha-lite/PhotoRestoreStudio-0.25-alpha-lite-Setup.exe)**,
+запустите, выберите новую папку и нажмите **«Установить»**. Всё остальное установщик
+скачает и проверит сам. Загрузка продолжается после обрыва. Для установки без интернета
+положите четыре ZIP-части рядом с Setup.exe — скрипты и manifest отдельно не нужны.
+Скачанные установщиком архивы удаляются после успешной установки; ваши ZIP-файлы рядом
+с ним сохраняются. Поддерживаются Windows 10/11 с .NET Framework 4.8.
+Python не требуется. Язык переключается сразу:
 **Настройки → Язык → RUS / EN**.
 
 Размер загрузки — около 4 ГБ, до сжатия на диске — около 6,2 ГБ. Установщик

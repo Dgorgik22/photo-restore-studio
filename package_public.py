@@ -51,9 +51,9 @@ def main():
             if path.stem in modules or path.name.startswith('test_'):archive.write(path,'source/'+path.name)
         for name in ('requirements.txt','requirements-lock.txt','install.ps1','build.ps1','catalog.json','PUBLIC-ALPHA.md','.gitignore','Install-Alpha.ps1','Setup.cmd'):
             archive.write(ROOT/name,'source/'+name)
-        for name in ('assets/brand','third_party/codeformer'):
+        for name in ('assets/brand','third_party/codeformer','installer'):
             for path in (ROOT/name).rglob('*'):
-                if path.is_file() and '__pycache__' not in path.parts:archive.write(path,'source/'+path.relative_to(ROOT).as_posix())
+                if path.is_file() and '__pycache__' not in path.parts and path.suffix not in ('.exe','.pdb'):archive.write(path,'source/'+path.relative_to(ROOT).as_posix())
         for name in ('assets/i18n.json','assets/licenses/Real-ESRGAN-BSD-3-Clause.txt',
                      'assets/licenses/PBRify-CC0.txt','assets/licenses/CodeFormer-SLab.txt'):
             archive.write(ROOT/name,'source/'+name)
